@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-colour: rgb(243, 243, 243);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) 5fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100%;
+    background-color: var(--primary-colour);
+}
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: red;
+}
+
+.sidebar {
+    background-color: #46acff;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-colour);
+    margin: 7%;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.core-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-colour);
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+.sidebar-menu-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.header-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar-menu-text {
+    padding-left: 10px;
+}
+
+.core-options {
+    margin-bottom: 10%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+}
