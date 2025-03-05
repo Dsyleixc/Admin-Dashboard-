@@ -35,6 +35,8 @@ button {
 
 h1 {
     font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .profile-picture {
@@ -54,6 +56,7 @@ h1 {
 .header {
     grid-column: 2;
     grid-row: 1;
+    min-height: 180px;
 }
 
 .sidebar {
@@ -193,13 +196,13 @@ h1 {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
     background-color: rgb(217, 230, 253);
+    padding-top: 3%;
 }
 .projects {
     grid-column: 1;
     grid-row: 1 / -1;
-    padding: 2%;
+    padding: 0 2% 2% 2%;
 }
 
 .card-grid {
@@ -212,7 +215,6 @@ h1 {
     background-color: white;
     border-left: 10px solid #ffbb00;
     border-radius: 10px;
-    padding: 2%;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     height: 200px;
     padding: 6%;
@@ -242,4 +244,76 @@ h1 {
 .card-icon {
     width: 25px;
     height: 25px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    padding-right: 6%;
+    margin-bottom: 4%;
+}
+
+.announcement-box {
+    background-color: white;
+    padding: 8%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.announcement span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.announcement p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.announcement-underline {
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    margin-bottom: 10px;
+}
+
+.trending-picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.trending {
+    padding-right: 6%;
+}
+
+.trending-box {
+    background-color: white;
+    padding: 8%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.trending-picture {
+    margin-right: 10px;
+}
+
+.trending-text span {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.trending-text p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
