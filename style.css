@@ -12,6 +12,33 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+input {
+    border: none;
+    outline: none;
+    background-color: rgb(228, 240, 250);
+    padding: 8px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+button {
+    background-color: #46acff;
+    border-radius: 15px;
+    padding: 7px;
+    width: 130px;
+    color: var(--primary-colour);
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.profile-picture {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
 .container {
     display: grid;
     grid-template-columns: minmax(260px, 1fr) 5fr;
@@ -23,7 +50,6 @@ body {
 .header {
     grid-column: 2;
     grid-row: 1;
-    background-color: red;
 }
 
 .sidebar {
@@ -91,12 +117,14 @@ body {
 .header {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1.5%;
 }
 
 .left {
@@ -104,9 +132,54 @@ body {
     align-items: center;
     gap: 10px;
     margin-left: 5%;
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.buttons {
+    width: 50%;
 }
 
 .nav-icon {
     width: 25px;
     height: 25px;
+}
+
+.user-info {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5%;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 2%;
+}
+
+.user-greeting {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.greeting-picture {
+    height: 70px;
+    width: 70px;
 }
